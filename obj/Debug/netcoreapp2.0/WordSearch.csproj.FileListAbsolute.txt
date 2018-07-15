@@ -1,0 +1,3 @@
+/home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.csproj.CoreCompileInputs.cache
+/home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.AssemblyInfoInputs.cache
+/home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.AssemblyInfo.cs

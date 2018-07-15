@@ -5,7 +5,7 @@ using WordSearch.Models;
 
 namespace WordSearch.Controllers
 {
-  public class RepeatCountController : Controllers
+  public class RepeatCountController : Controller
   {
     [HttpGet("/form")]
     public ActionResult Form()

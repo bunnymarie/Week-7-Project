@@ -1,5 +1,5 @@
 using System;
-using Systen.Collections.Generic;
+using System.Collections.Generic;
 
 namespace WordSearch.Models
 {
