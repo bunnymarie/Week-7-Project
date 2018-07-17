@@ -1,0 +1,7 @@
+@{
+  Layout = "_Layout";
+}
+    <div id="writingSample">@Model.IsItNull()</div>
+    <p> </p>
+    <p>You used the word</p>
+    <div id="userWord">@Model.GetUserWord()</div>  <p>@Model.wordCountProcess() times.</p>

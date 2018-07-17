@@ -15,9 +15,13 @@ namespace WordSearch.Controllers
     [HttpPost("/form/result")]
     public ActionResult RepeatCount()
     {
-      RepeatCounter newUserWriting = new RepeatCounter(Request.Form["user-writing"]);
-      RepeatCounter newUserWord = new RepeatCounter(Request.Form["user-word"]);
-      return View(model);
+      RepeatCounter newUserWord = new RepeatCounter(Request.Form["newUserWord"], Request.Form["newUserWriting"]);
+      return View(newUserWord);
     }
+    [HttpGet("/form/result")]
+      public ActionResult RepeatCount(RepeatCounter model)
+      {
+        return View(model);
+      }
   }
 }

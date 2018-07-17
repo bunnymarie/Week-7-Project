@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+    <p>Enter a sample of writing, and a word. This app will find every instance of you repeating yourself and tell you how many times you have.</p>
+    <form action="/form/result" method="post">
+      <label for="newUserWriting" name="newUserWriting" type="text">
+        Writing:
+      <input id='newUserWriting' name="newUserWriting" type="text">
+      <p> </p>
+      <label for="newUserWord" name="newUserWord" type="text"> Word:
+      <input id='newUserWord' name='newUserWord' type='text'>
+      <p> </p>
+      <button type="submit">Find!</button>
+    </form>

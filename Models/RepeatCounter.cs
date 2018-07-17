@@ -1,45 +1,53 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WordSearch.Models
 {
   public class RepeatCounter
   {
-    private string _userWriting;
-    private string[] _userSplit = userWord.Split();
-    private string _userWord;
-    private int _repeatCount = 0;
+      private string _userWriting;
+      private string _userWord;
+      public int _repeatCount = 0;
+      public string[] userSplit;
+      public string _returnError = "ONE OR MORE ENTRIES EMPTY/NULL, PLEASE TRY AGAIN!";
 
-    public string GetUserWriting()
-    {
-      return _userWriting;
-    }
-    public void SetUserWriting(string newUserWriting)
-    {
-      _userWriting = newUserWriting;
-    }
-    public string GetUserWord()
-    {
-      return _userWord;
-    }
-    public void SetUserWord(string newUserWord)
-    {
-      _userWord = newUserWord;
-    }
-    public int GetRepeatCount()
-    {
-      return _repeatCount;
-    }
-    public string UserWritingSplit(string[] _userSplit, string _userWord, int _repeatCount)
-    {
-      for(int i = 0; i < _userSplit.Length; i++)
-              {
-                if (_userSplit[i] == _userWord + "." || _userSplit[i] == _userWord + "," || _userSplit[i] == _userWord + "!" || _userSplit[i] == _userWord + "?" || _userSplit[i] == _userWord)
-                {
-                  _repeatCount += 1;
-                }
-          return _userSplit;
+      public RepeatCounter(string newUserWord, string newUserWriting)
+      {
+        _userWriting = newUserWriting;
+        _userWord = newUserWord;
       }
-    }
+      public string GetUserWriting()
+      {
+        return _userWriting;
+      }
+      public string GetUserWord()
+      {
+        return _userWord;
+      }
+      public string IsItNull()
+      {
+        if(String.IsNullOrEmpty(_userWord) || String.IsNullOrEmpty(_userWriting))
+        {
+          return _returnError;
+        } else
+        {
+          return _userWriting;
+        }
+      }
+      public int wordCountProcess()
+      {
+        string[] userSplit = _userWriting.Split();
+        int foundNumbers = 0;
+        for(int i = 0; i < userSplit.Length; i++)
+          {
+            if (userSplit[i] == _userWord + "." || userSplit[i] == _userWord + "," || userSplit[i] == _userWord + "!" || userSplit[i] == _userWord + "?" || userSplit[i] == _userWord)
+            {
+              foundNumbers += 1;
+            }
+          }
+        _repeatCount = foundNumbers;
+        return _repeatCount;
+      }
   }
 }

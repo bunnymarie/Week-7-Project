@@ -1,3 +1,10 @@
+/home/dell/Desktop/WordSearchFinal/bin/Debug/netcoreapp2.0/WordSearch.deps.json
+/home/dell/Desktop/WordSearchFinal/bin/Debug/netcoreapp2.0/WordSearch.runtimeconfig.json
+/home/dell/Desktop/WordSearchFinal/bin/Debug/netcoreapp2.0/WordSearch.runtimeconfig.dev.json
+/home/dell/Desktop/WordSearchFinal/bin/Debug/netcoreapp2.0/WordSearch.dll
+/home/dell/Desktop/WordSearchFinal/bin/Debug/netcoreapp2.0/WordSearch.pdb
 /home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.csproj.CoreCompileInputs.cache
 /home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.AssemblyInfoInputs.cache
 /home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.AssemblyInfo.cs
+/home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.dll
+/home/dell/Desktop/WordSearchFinal/obj/Debug/netcoreapp2.0/WordSearch.pdb
